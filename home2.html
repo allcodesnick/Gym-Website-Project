@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classes</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+  </head>
+  <body>
+<!-- This is the Navigation-->
+<div class="header">
+  <div class="topnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="classes.html">Classes</a>
+  <a href="events.html">Events</a>
+  <a href="locations.html">Locations</a>
+  <a href="trainer.html">Trainer</a>
+</div>
+</div>
+
+<!-- This is The Login-->
+<div class="login-page">
+<div class="form">
+<form class="register-form" name= "register" action="http://www.websitedevelopmentbook.com/FormEcho.php"
+ method="post">
+  <input type="text" placeholder="Full Name" required/>
+  <input type="number" placeholder="Phone Number" required/>
+  <input type="text" placeholder="Address" required/>
+  <input type="text" placeholder="Password" name= "password" required/>
+  <input type="text" placeholder="Email" required/>
+  <button>Create</button>
+  <p class="message">Already Registered? <a href="#">Login</a></p>
+</form>
+
+<form class="login-form" action="http://www.websitedevelopmentbook.com/FormEcho.php" method="post">
+  <input type="text" placeholder="Username" required/>
+  <input type="text" placeholder="Password" required/>
+  <button> Login</button>
+  <p class="message"> Not Registered?<a href="#">Join Now</a></p>
+</form>
+</div>
+</div>
+<!-- This is The page content-->
+
+<div id="pagecontainer">
+  <img src="gym1.jpg" alt=""width="500px"; height= "350px">
+  <div class="textbox">
+    <h1>HI, WE'RE Gym FITNESS.</h1>
+    <p>At our gyms, exercise isn't just about how it makes you look, it's also
+       about how it makes you feel.</p>
+  </div>
+</div>
+
+  <div id="pagecontainer">
+    <img src="gym2.jpg" alt=""width="500px"; height= "350px">
+    <div class="textbox">
+      <h1>INSIDE A GYM FITNESS</h1>
+      <p>At our gyms, exercise isn't just about how it makes you look, it's also
+         about how it makes you feel. Our gyms are fitted with the latest technology,
+       and designed for a luxurious workout experience.</p>
+    </div>
+</div>
+
+<!-- This the bottomdiv with the website logo(background is transparent)-->
+    <div id="bottomdiv" align="center">
+      <img src="gymlogo.jpg" alt="gymlogo" height="100px" width="100px">
+      <p>content for the bottom div(background is transparent)</p>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="external.js"></script>
+  </body>
+
+</html>

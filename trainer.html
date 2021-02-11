@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trainer</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- This is the Navigation-->
+    <div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="locations.html">Locations</a>
+    <a href="trainer.html" class="active">Trainer</a>
+  </div>
+
+  <!-- Page Login/register-->
+    <div class="containment">
+      <h1>Login/Sign Up</h1>
+      <div class="login-page">
+      <div class="form">
+        <form class="register-form" name= "register" action="http://www.websitedevelopmentbook.com/FormEcho.php"
+         method="post">
+         <!-- Profile information-->
+         <div class="containment">
+           <h4>Register</h4>
+           <input type="text" name="firstname" placeholder="Full Name">
+           <input type="text" name="email" placeholder="Email">
+           <input type="text" name="password" placeholder="Password">
+           <input type="text" name="cardnumber" placeholder="Credit Card number Ex. 1111-2222-3333-4444" required>
+           <input type="text" name="expmonth" placeholder="Exp Month MM/YY" required>
+           <input type="text" name="expyear" placeholder="Exp Year YYYY" required>
+           <input type="text" name="cvv" placeholder="CVV" required>
+         <button>Register</button>
+         <p class="message">Already Registered? <a href="#">Login</a></p>
+       </div>
+        </form>
+        <!-- Page Login-->
+        <form class="login-form" action="http://www.websitedevelopmentbook.com/FormEcho.php" method="post">
+          <div>
+          <h4>Login</h4>
+          <input type="text" placeholder="Email" required/>
+          <input type="text" placeholder="Password" required/>
+          <button> Login</button>
+          <p class="message"> Not Registered?<a href="#">Register</a></p>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+
+<h1 align="center">Sign up for a Trainer<h4 align="center">(Click Image)</h4></h1>
+    <!-- Page Content that shows the location of one image(START)-->
+      <div class="containment">
+        <img id="myImg" src="gymtrainers.jpg" alt="gymLocation"width="800px" height="500px">
+      </div>
+  <div class="containment">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <!-- contact us form-->
+        <table align="center">
+          <th><h1>Sign up for a Trainer/Classes</h1></th>
+          <tr>
+            <td><img src="gymtrainers.jpg" alt="gymtrainers" height="300px" width="500px"></td>
+          </tr>
+          <tr align= "center"><td>
+            <form class="" action="http://www.websitedevelopmentbook.com/FormEcho.php"
+             method="post">
+              <input type="input" name="Email" required placeholder="Email"><br>
+              <input type="input" name="Password" required placeholder="Password"><br>
+              Experience:<br>
+              Beginner<input type="radio" name="status" value="Business">
+              Expert<input type="radio" name="status" value="Exsisting">
+              Intermediate<input type="radio" name="status" value="New" checked><br>
+
+              Looking for:<br>
+              Classes<input type="radio" name="status" value="Business">
+              Trainer<input type="radio" name="status" value="Exsisting">
+              Both<input type="radio" name="status" value="Both" checked><br>
+
+
+              Classes:<br>
+              Group workouts <input type="checkbox" name="Classes" value="Group workouts">
+              Swimming <input type="checkbox" name="Classes" value="Swimming">
+              Boxing <input type="checkbox" name="Classes" value="Boxing">
+              Yoga <input type="checkbox" name="Classes" value="Yoga">
+              Self Defense <input type="checkbox" name="Classes" value="Yoga">
+              Kids Self Defense <input type="checkbox" name="Classes" value="Yoga">
+              CrossFit <input type="checkbox" name="Classes" value="Yoga">
+              Weight Training<input type="checkbox" name="Classes" value="Weight Training"><br>
+
+                Promotions:<select class="" name="Issue:">
+                <option>1 Day Free Membership</option>
+                <option>1 Free Yoga Session</option>
+                <option>1 Day Kids Self Defense session</option>
+                <option>1 On 1 Personal trainer</option>
+                <option>1 free Boxing lesson</option>
+                <option>None</option>
+              </select><br>
+              <textarea name="Comment" rows="8" cols="50" placeholder="Tell us what your Gym Goals, Routines:"></textarea><br>
+              <input type="submit" value="Submit Review">
+              <input type="reset" name="" value="reset">
+            </form><br>
+          </td></tr>
+          </table>
+      </div>
+    </div>
+<!-- div website logo-->
+      <div class="footer">
+        <img src="Logo.png" alt="Website Logo" height="55px" width="55px">
+      </div>
+<script src="external.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$('.message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>
